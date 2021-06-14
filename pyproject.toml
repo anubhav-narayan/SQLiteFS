@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "sqlitefs"
+version = "0.11.0"
+description = "SQLite based Filesystem with DOPE Encryption"
+authors = ["Anubhav Mattoo <anubhavmattoo@outlook.com>"]
+license = "MIT"
+readme = './README.md'
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pycryptodome = "^3.9"
+bchlib = "^0.14.0"
+dill = "^0.3.4"
+sqlitedict = "1.7.0"
+fusepy = "^3.0.1"
+click = "^8.0.1"
+daemonocle = "^1.2.3"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+sqlitefs = 'sqlitefs.sqlitefs:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
