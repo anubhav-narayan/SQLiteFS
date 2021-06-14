@@ -9,6 +9,11 @@ To install from source use the following command, make sure you have `setuptools
 ```bash
 python3 seutp.py install
 ```
+### Via [Poetry](https://python-poetry.org)
+```bash
+poetry build
+pip3 install dist/sqlitefs*.whl
+```
 NOTE : Currently only for Linux and Mac
 
 ## SQLiteFS CLI
